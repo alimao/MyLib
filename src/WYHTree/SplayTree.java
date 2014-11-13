@@ -72,7 +72,7 @@ public class SplayTree {
 	}
 
 	public boolean insert(int key, int val){
-		splay(root, key);
+		root=splay(root, key);
 		if (root.key==key){
 			root.val=val;
 			return true;
@@ -86,7 +86,7 @@ public class SplayTree {
 	}
 	
 	public boolean delete(int key){
-		splay(root, key);
+		root=splay(root, key);
 		if (root.key!=key){
 			return false;
 		}
@@ -97,7 +97,7 @@ public class SplayTree {
 	}
 	
 	public int search(int key){
-		splay(root,key);
+		root=splay(root,key);
 		if (root.key==key){
 			return root.val;
 		}
