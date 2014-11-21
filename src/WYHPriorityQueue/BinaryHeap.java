@@ -10,4 +10,8 @@ public class BinaryHeap {
 	}
 	
 	
+	public int min(){
+		
+	}
+	
 }
